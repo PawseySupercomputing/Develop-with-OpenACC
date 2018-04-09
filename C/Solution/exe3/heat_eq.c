@@ -71,7 +71,7 @@ int main(int argc, char* argv[]){
 			// (use make VIS=1 to compile with I/O support)
 #ifdef VIS
 			if ( iter % CHKPNT_ITER == 0){
-
+			#pragma acc update host(T_new[0:ROWS+2][0:COLS+2])
 				write_dataset_vtk(ROWS+2,COLS+2,T_new,iter);
 
 			}
