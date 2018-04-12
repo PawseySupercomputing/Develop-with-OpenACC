@@ -1,8 +1,6 @@
 #!/bin/bash -l
-
-#SBATCH --account=pawsey0001
-#SBATCH --partition=gpuq
-#SBATCH --constraint=tesla
+#SBATCH --reservation=courseq
+#SBATCH --constraint=p100
 #SBATCH --gres=gpu:1
 #SBATCH --time=00:15:00
 #SBATCH --export=NONE
