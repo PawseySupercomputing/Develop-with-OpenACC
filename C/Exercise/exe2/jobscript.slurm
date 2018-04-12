@@ -1,5 +1,6 @@
 #!/bin/bash -l
 #SBATCH --reservation=courseq 
+#SBATCH --partition=gpuq
 #SBATCH --constraint=p100
 #SBATCH --gres=gpu:1
 #SBATCH --time=00:15:00
